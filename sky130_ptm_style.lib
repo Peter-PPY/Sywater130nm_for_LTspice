@@ -1,0 +1,137 @@
+* ============================================================
+* SKY130 flat BSIM4 model, PTM-style single .model card
+* Distilled from SkyWater sky130_fd_pr open PDK (Apache-2.0)
+*   Corner  : tt (typical)      Statistical/MC : OFF (nominal)
+*   Frozen bin: L=0.15um  W=1.0um
+* Single-geometry snapshot: does NOT scale across L/W like the
+* real binned PDK. For quick/behavioral/teaching sims only;
+* use the real sky130_fd_pr subckt for sign-off.
+* ============================================================
+
+.model sky130_nmos_130 NMOS  level = 54
++ tnom = 30.0    version = 4.5    toxm = 4.148e-9    xj = 1.5e-7
++ lln = 1.0    lwn = 1.0    wln = 1.0    wwn = 1.0
++ lint = 1.1932e-08    ll = 0.0    lw = 0.0    lwl = 0.0
++ wint = 2.1859e-08    wl = 0.0    ww = 0.0    wwl = 0.0
++ xl = 0.0    xw = 0.0    mobmod = 0.0    dwg = 0.0
++ dwb = 0.0    igcmod = 0.0    igbmod = 0.0    rgatemod = 0.0
++ rbodymod = 1.0    trnqsmod = 0.0    acnqsmod = 0.0    fnoimod = 1.0
++ tnoimod = 1.0    permod = 1.0    geomod = 0.0    rdsmod = 0.0
++ tempmod = 0.0    lintnoi = -1.0e-7    vfbsdoff = 0.0    lambda = 0.0
++ vtl = 0.0    lc = 5.0e-9    xn = 3.0    rnoia = 0.94
++ rnoib = 0.26    tnoia = 1.5e+7    tnoib = 9.9e+6    epsrox = 3.9
++ toxe = 4.148e-09    dtox = 0.0    ndep = 1.7e+17    nsd = 1.0e+20
++ rshg = 0.1    rsh = 1.0    vth0 = 0.4730971    k1 = 0.90707349
++ k2 = -0.1284499    k3 = 2.0    dvt0 = 0.0    dvt1 = 0.53
++ dvt2 = -0.032    dvt0w = -3.58    dvt1w = 1670600.0    dvt2w = 0.068
++ w0 = 0.0    k3b = 0.54    phin = 0.0    lpe0 = 1.0325e-7
++ lpeb = -7.082e-8    vbm = -3.0    dvtp0 = 0.0    dvtp1 = 0.0
++ vsat = 180978.2    ua = -1.177681e-09    ub = 1.8402999999999998e-18    uc = 8.1022e-11
++ rdsw = 65.968    prwb = 0.0    prwg = 0.021507    wr = 1.0
++ u0 = 0.026288100000000002    a0 = 1.5    keta = 0.0    a1 = 0.0
++ a2 = 0.42385546    ags = 1.25    b0 = 0.0    b1 = 0.0
++ eu = 1.67    rdswmin = 0.0    rdw = 0.0    rdwmin = 0.0
++ rsw = 0.0    rswmin = 0.0    voff = -0.20753    nfactor = 2.86866
++ up = 0.0    ud = 0.0    lp = 1.0    tvfbsdoff = 0.0
++ tvoff = 0.0    cit = 0.0    cdsc = 0.0    cdscb = 0.0
++ cdscd = 0.002052    eta0 = 0.00069413878    etab = -0.043998    dsub = 0.45862506
++ voffl = 5.8197729e-9    minv = 0.0    pclm = 0.12966    pdiblc1 = 0.35697215
++ pdiblc2 = 0.0084061121    pdiblcb = -0.10329577    drout = 0.50332666    pscbe1 = 7.9141988e+8
++ pscbe2 = 1.0e-12    pvag = 0.0    delta = 0.01    alpha0 = 3.0e-8
++ alpha1 = 0.85    beta0 = 13.85    fprout = 0.0    pdits = 0.0
++ pditsl = 0.0    pditsd = 0.0    agidl = 0.0    bgidl = 2.3e+9
++ cgidl = 0.5    egidl = 0.8    aigbacc = 1.0    bigbacc = 0.0
++ cigbacc = 0.0    nigbacc = 0.0    aigbinv = 0.35    bigbinv = 0.03
++ cigbinv = 0.006    eigbinv = 1.1    nigbinv = 0.0    aigc = 0.43
++ bigc = 0.054    cigc = 0.075    nigc = 0.0    aigsd = 0.43
++ bigsd = 0.054    cigsd = 0.075    dlcig = 0.0    poxedge = 1.0
++ pigcd = 1.0    ntox = 1.0    toxref = 4.148e-9    kt1 = -0.22096074
++ kt2 = -0.028878939    at = 40720.487    ute = -1.3190432    ua1 = -2.3847336e-11
++ ub1 = 7.0775317e-19    uc1 = 1.4718625e-10    kt1l = 0.0    prt = 0.0
++ xrcrg1 = 12.0    xrcrg2 = 1.0    rbpb = 50.0    rbpd = 50.0
++ rbps = 50.0    rbdb = 50.0    rbsb = 50.0    gbmin = 1.0e-12
++ noia = 2.5e+42    noib = 0.0    noic = 0.0    em = 4.1000000e+7
++ af = 1.0    ef = 0.84    kf = 0.0    ntnoi = 1.0
++ dmcg = 0.0    dmcgt = 0.0    dmdg = 0.0    xgw = 0.0
++ xgl = 0.0    ngcon = 1.0    diomod = 1.0    njs = 1.2928
++ jss = 0.0027500000000000003    jsws = 6.0e-10    xtis = 2.0    bvs = 11.7
++ xjbvs = 1.0    ijthsrev = 0.1    ijthsfwd = 0.1    tpb = 0.0012287
++ tpbsw = 0.0    tpbswg = 0.0    tcj = 0.000792    tcjsw = 1.0e-5
++ tcjswg = 0.0    cgdo = 2.449068e-10    cgso = 2.449068e-10    cgbo = 1.0e-13
++ capmod = 2.0    xpart = 0.0    cgsl = 0.0    cgdl = 0.0
++ cf = 1.4067e-12    clc = 1.0e-7    cle = 0.6    dlc = 9.87908e-09
++ dwc = 0.0    vfbcv = -1.0    acde = 0.4    moin = 6.9
++ noff = 3.4037    voffcv = -0.17287    ngate = 1.0e+23    lwc = 0.0
++ llc = 0.0    lwlc = 0.0    wlc = 0.0    wwc = 0.0
++ wwlc = 0.0    ckappas = 0.6    cjs = 0.001339749237    mjs = 0.44
++ pbs = 0.729    cjsws = 3.67354204e-11    mjsws = 0.0009    pbsws = 0.2
++ cjswgs = 2.38232788e-10    mjswgs = 0.8000    pbswgs = 0.95578    saref = 1.04e-6
++ sbref = 1.04e-6    wlod = 0.0    kvth0 = 9.8e-9    lkvth0 = 0.0
++ wkvth0 = .2e-6    pkvth0 = 0.0    llodvth = 0.0    wlodvth = 1.0
++ stk2 = 0.0    lodk2 = 1.0    lodeta0 = 1.0    ku0 = -2.7e-8
++ lku0 = 0.0    wku0 = 0.0    pku0 = 0.0    llodku0 = 0.0
++ wlodku0 = 1.0    kvsat = 0.2    steta0 = 0.0    tku0 = 0.0
+
+.model sky130_pmos_130 PMOS  level = 54
++ tnom = 30.0    version = 4.5    toxm = 4.23e-9    xj = 1.5e-7
++ lln = 1.0    lwn = 1.0    wln = 1.0    wwn = 1.0
++ lint = -1.3994e-08    ll = 0.0    lw = 0.0    lwl = 0.0
++ wint = 7.3039e-09    wl = 0.0    ww = 0.0    wwl = 0.0
++ xl = 0.0    xw = 0.0    mobmod = 0.0    dwg = -5.722e-9
++ dwb = -1.7864e-8    igcmod = 0.0    igbmod = 0.0    rgatemod = 0.0
++ rbodymod = 1.0    trnqsmod = 0.0    acnqsmod = 0.0    fnoimod = 1.0
++ tnoimod = 1.0    permod = 1.0    geomod = 0.0    rdsmod = 0.0
++ tempmod = 0.0    lintnoi = -2.0e-7    vfbsdoff = 0.0    lambda = 0.0
++ vtl = 0.0    lc = 5.0e-9    xn = 3.0    rnoia = 0.69
++ rnoib = 0.34    tnoia = 25.0e+6    tnoib = .0e-6    epsrox = 3.9
++ toxe = 4.23e-09    dtox = 0.0    ndep = 1.7e+17    nsd = 1.0e+20
++ rshg = 0.1    rsh = 1.0    vth0 = -1.029707    k1 = 1.4974388
++ k2 = -0.36825252999999997    k3 = -15.845    dvt0 = 4.4955    dvt1 = 0.294
++ dvt2 = 0.015    dvt0w = -4.9772    dvt1w = 1147200.0    dvt2w = -0.00896
++ w0 = 0.0    k3b = 2.0    phin = 0.0    lpe0 = 0.0
++ lpeb = 0.0    vbm = -3.0    dvtp0 = 0.0    dvtp1 = 0.0
++ vsat = 55445.49    ua = -2.5938629999999997e-09    ub = 2.4055342e-18    uc = 2.3206046e-13
++ rdsw = 547.88    prwb = -0.32348    prwg = 0.1376    wr = 1.0
++ u0 = 0.0025392599999999998    a0 = 0.72595373    keta = -0.0003767501    a1 = 0.0
++ a2 = 0.9995    ags = 1.25    b0 = 0.0    b1 = 0.0
++ eu = 1.67    rdswmin = 0.0    rdw = 0.0    rdwmin = 0.0
++ rsw = 0.0    rswmin = 0.0    voff = -0.38586511    nfactor = 2.735309
++ up = 0.0    ud = 0.0    lp = 1.0    tvfbsdoff = 0.0
++ tvoff = 0.0    cit = 1.0e-5    cdsc = 0.00013    cdscb = 0.00078
++ cdscd = 0.0    eta0 = 0.34230525    etab = -1.1566507e-13    dsub = 0.26628854
++ voffl = 0.0    minv = 0.0    pclm = 0.45374464    pdiblc1 = 0.0195
++ pdiblc2 = 0.00043    pdiblcb = -2.4414063e-5    drout = 1.0    pscbe1 = 8.0e+8
++ pscbe2 = 9.3761341e-9    pvag = 0.0    delta = 0.01    alpha0 = 1.0e-10
++ alpha1 = 1.0e-10    beta0 = 7.2512308    fprout = 0.0    pdits = 0.0
++ pditsl = 0.0    pditsd = 0.0    agidl = 9.1989212e-10    bgidl = 1000000000.0
++ cgidl = 300.0    egidl = 0.1    aigbacc = 0.43    bigbacc = 0.054
++ cigbacc = 0.075    nigbacc = 1.0    aigbinv = 0.35    bigbinv = 0.03
++ cigbinv = 0.006    eigbinv = 1.1    nigbinv = 3.0    aigc = 0.43
++ bigc = 0.054    cigc = 0.075    nigc = 1.0    aigsd = 0.43
++ bigsd = 0.054    cigsd = 0.075    dlcig = 0.0    poxedge = 1.0
++ pigcd = 1.0    ntox = 1.0    toxref = 4.23e-9    kt1 = -0.70976
++ kt2 = -0.12    at = 21109.0    ute = -0.21243    ua1 = 1.0762e-10
++ ub1 = 3.6891e-19    uc1 = 7.961e-12    kt1l = 0.0    prt = 0.0
++ xrcrg1 = 12.0    xrcrg2 = 1.0    rbpb = 50.0    rbpd = 50.0
++ rbps = 50.0    rbdb = 50.0    rbsb = 50.0    gbmin = 1.0e-12
++ noia = 1.5e+42    noib = 0.0    noic = 0.0    em = 4.1000000e+7
++ af = 1.0    ef = 1.0    kf = 0.0    ntnoi = 1.0
++ dmcg = 0.0    dmcgt = 0.0    dmdg = 0.0    xgw = 0.0
++ xgl = 0.0    ngcon = 1.0    diomod = 1.0    njs = 1.3632
++ jss = 2.1483e-5    jsws = 8.040000000000001e-10    xtis = 5.2    bvs = 12.69
++ xjbvs = 1.0    ijthsrev = 0.1    ijthsfwd = 0.1    tpb = 0.0020386
++ tpbsw = 0.001246    tpbswg = 0.0    tcj = 0.0012407    tcjsw = 0.00037357
++ tcjswg = 2.0e-12    cgdo = 5.248925e-11    cgso = 5.248925e-11    cgbo = 0.0
++ capmod = 2.0    xpart = 0.0    cgsl = 9.548271750000001e-12    cgdl = 9.548271750000001e-12
++ cf = 1.2e-11    clc = 1.0e-7    cle = 0.6    dlc = -3e-09
++ dwc = 0.0    vfbcv = -0.14469    acde = 0.8    moin = 18.13
++ noff = 3.9    voffcv = -0.10701    ngate = 1.0e+23    lwc = 0.0
++ llc = 0.0    lwlc = 0.0    wlc = 0.0    wwc = 0.0
++ wwlc = 0.0    ckappas = 0.6    cjs = 0.0007380194454    mjs = 0.34629
++ pbs = 0.6587    cjsws = 9.888891999999999e-11    mjsws = 0.29781    pbsws = 0.7418
++ cjswgs = 2.39155046e-10    mjswgs = 0.9274    pbswgs = 1.4338    saref = 1.04e-6
++ sbref = 1.04e-6    wlod = 0.0    kvth0 = 3.29e-08    lkvth0 = 0.0
++ wkvth0 = 2e-07    pkvth0 = 0.0    llodvth = 0.0    wlodvth = 1.0
++ stk2 = 0.0    lodk2 = 1.0    lodeta0 = 1.0    ku0 = 4.5e-08
++ lku0 = 0.0    wku0 = 2.5e-07    pku0 = 0.0    llodku0 = 0.0
++ wlodku0 = 1.0    kvsat = 0.5    steta0 = 0.0    tku0 = 0.0
